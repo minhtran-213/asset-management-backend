@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "04870fc7-2beb-4929-b706-427ff043bb4a",
+		"name": "Asset-Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"nhimh\",\r\n    \"password\": \"nhimh@01062000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/asset-management/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"asset-management",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"staffcode\": \"SD0001\",\r\n    \"username\": \"nanguyen\",\r\n    \"password\": \"123456\",\r\n    \"firstname\": \"nguyen\",\r\n    \"lastname\": \"nhan\",\r\n    \"idLocation\": \"101\",\r\n    \"idRole\": \"1002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/asset-management/auth/fakesignup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"asset-management",
+								"auth",
+								"fakesignup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
